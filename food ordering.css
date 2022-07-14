@@ -1,0 +1,214 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+
+#logo {
+    margin: 0px 0px;
+    padding: 2px 2px;
+}
+
+#logo img {
+    height: 80px;
+}
+
+.nav {
+    margin: 26px 10px;
+    padding: 5px 3px;
+    display: flex;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li a {
+    margin: 2px 25px;
+    padding: 2px 2px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f5f5f5;
+    display: block;
+}
+
+.nav li a:hover {
+    background-color: black;
+    color: red;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    height: 550px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)no-repeat center center/cover;
+    height: 650px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: red;
+    text-align: center;
+    font-size: 33px;
+}
+
+#home p {
+    font-size: 24px;
+    color: white;
+}
+
+#home button {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#home button:hover {
+    color: white;
+    background-color: black;
+}
+
+/**section container**/
+.section {
+    border: 2px solid red;
+    width: 400px;
+    margin: 33px 8px;
+    padding: 2px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    height: 390px;
+}
+
+.sec-cont {
+    width: 100%;
+      display: flex;
+    justify-content: center;
+
+}
+
+#section-container {
+    background-color: beige;
+    height: 600px;
+}
+
+.section img {
+    height: 100px;
+}
+
+#section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-primary_center {
+    font-size: 25px;
+    color: red;
+    margin: 12px 2px;
+}
+
+/** Client section **/
+#client-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+
+#clients {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.client-item img {
+    height: 150px;
+    width: 150px;
+    margin: 30px 55px;
+}
+
+.h-primary_center1 {
+    font-size: 36px;
+    color: red;
+    margin: 50px;
+}
+
+#client-section::before {
+    content: "";
+    background: url(https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60)no-repeat center center/cover;
+    position: absolute;
+    height: 550px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+}
+
+/** contact section **/
+#contact-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+
+}
+
+#contact-sec::before {
+    content: "";
+    background: url(https://imaginenext.ingrammicro.com/IngramMicroAdvisor/media/IngramMicroAdvisor/Trends/hubfs/How_to_Speak_to_Social_Media_in_Business_Communication.jpg)no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.79;
+    width: 100%;
+    height: 250px;
+}
+
+#contact-sec .h-end {
+    font-size: 30px;
+    color: red;
+    margin: 28px 2px;
+}
+
+#contact {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
